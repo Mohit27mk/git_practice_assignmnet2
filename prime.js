@@ -1,3 +1,5 @@
+
+
 function checkPrime(num){
 	flag = true;
 	if(num == 1){
