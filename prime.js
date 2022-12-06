@@ -1,15 +1,27 @@
-fuction checkPrime(num){
- for(let i=2;i<num;i++){
-   if(num%i==0){
-          return false;
-}
-}
-return true;
+
+
+function checkPrime(num){
+	flag = true;
+	if(num == 1){
+		flag = false
+	}	
+	else {
+		for(i=2;i<Math.sqrt(num);i++){
+			if(num% i == 0){
+			flag  = false;
+			}
+			else {
+			flag = true;
+			}
+
+		}
+	}
+	if (flag == true ){
+	console.log(" prime ")
+	}
+	else {
+	console.log( "not prime")
+	}
 
 }
-let ans=checkPrime(13);
-if(ans==true){
-console.log("Prime Number);
-}else{
-console.log("Prime Not Number);
-}
+checkPrime(1);
