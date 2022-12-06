@@ -1,9 +1,15 @@
 fuction checkPrime(num){
- for(let i=1;i<=num;i++){
+ for(let i=2;i<num;i++){
    if(num%i==0){
-          return true;
-}
-return false;
+          return false;
 }
 }
-checkPrime(13);
+return true;
+
+}
+let ans=checkPrime(13);
+if(ans==true){
+console.log("Prime Number);
+}else{
+console.log("Prime Not Number);
+}
